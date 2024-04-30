@@ -32,7 +32,7 @@ function Navbar() {
         <a className="navbar-brand fs-4 fw-semibold text-secondary" href="#">
           TODO
         </a>
-        {user?.name && (
+        {user?.token && (
           <div className="d-flex">
         <button className="btn btn-outline-danger mx-3" onClick={handleLogout}>Logout</button>
         </div>

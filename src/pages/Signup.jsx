@@ -37,7 +37,7 @@ function Signup() {
       if (user?.token) {
         navigate("/login");
       }
-    }, [user, isError, message]);
+    }, [user?.token, isError, message]);
 
     if (isLoading) {
       return (
